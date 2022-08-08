@@ -10,7 +10,7 @@ module Temple
     include Mixins::Options
 
     define_options :save_buffer,
-                   capture_generator: self,
+                   capture_generator: 'StringBuffer',
                    buffer: '_buf',
                    freeze_static: RUBY_VERSION >= '2.1'
 
